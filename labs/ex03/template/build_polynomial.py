@@ -12,4 +12,8 @@ def build_poly(x, degree):
     # this function should return the matrix formed
     # by applying the polynomial basis to the input data
     # ***************************************************
-    raise NotImplementedError
+    poly_matrix = np.ones(len(x)).T
+    for d in range(1,degree+1) :
+        poly_matrix = (np.vstack((poly_matrix,x**d)))
+        
+    return poly_matrix

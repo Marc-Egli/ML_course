@@ -2,7 +2,7 @@
 """ Grid Search"""
 
 import numpy as np
-import costs
+from costs import *
 
 
 def generate_w(num_intervals):
